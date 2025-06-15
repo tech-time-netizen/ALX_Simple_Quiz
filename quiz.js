@@ -21,7 +21,7 @@ function checkAnswer() {
         document.getElementById("feedback").classList.remove("error");
         disableInput(); // Disable input after correct answer
     } else {
-            document.getElementById("feedback").innerHTML = "That's Incorrect. Try again!";
+            document.getElementById("feedback").innerHTML = "That's incorrect. Try again!";
             document.getElementById("feedback").classList.add("error");
             document.getElementById("feedback").classList.remove("success");
             disableInput(); // Disable input after maximum attempts
