@@ -21,18 +21,16 @@ function checkAnswer() {
         document.getElementById("feedback").classList.remove("error");
         disableInput(); // Disable input after correct answer
     } else {
-        incorrectAttempts++;
-        if (incorrectAttempts >= 2) {
-            document.getElementById("feedback").innerHTML = "Incorrect. You have reached the maximum attempts. <br> The correct answer is 4.";
+            document.getElementById("feedback").innerHTML = "That's Incorrect. Try again!";
             document.getElementById("feedback").classList.add("error");
             document.getElementById("feedback").classList.remove("success");
             disableInput(); // Disable input after maximum attempts
             return;
-        }else {
-            document.getElementById("feedback").innerHTML = "That's Incorrect. Try again!";
-            document.getElementById("feedback").classList.add("error");
-            document.getElementById("feedback").classList.remove("success");
-        }
+        // }else {
+        //     document.getElementById("feedback").innerHTML = "That's Incorrect. Try again!";
+        //     document.getElementById("feedback").classList.add("error");
+        //     document.getElementById("feedback").classList.remove("success");
+        // }
         
     }
 }
